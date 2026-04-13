@@ -1,20 +1,27 @@
 # Minecraft Timeline
 
-A visual, interactive website showing the complete month-by-month history of Minecraft from April 2009 to 2025 — plus an alternate "What if Minecraft was never created?" timeline.
+A visual, interactive horizontal-scrolling website showing the complete month-by-month history of Minecraft from April 2009 to 2026 — plus alternate "what if" timelines.
 
 ## Features
 
-- **Real Timeline**: Every major Minecraft milestone, update, and event
+- **Horizontal scrolling** layout — timelines flow left to right
+- **Multiple timelines** supported — add as many as you want in `data.js`
+- **Real Timeline**: Every major Minecraft milestone, update, and event through 2026
 - **Alternate Timeline**: A speculative history where Minecraft never existed
-- **Both View**: Side-by-side comparison of both timelines
+- **Toggle any combination** of timelines via nav buttons
+- **Shared starting points** with clear divergence markers
 - **Minecraft-themed design**: Pixel fonts, block particles, earthy color palette
-- **Scroll animations**: Entries fade in as you scroll
+- **Mouse wheel** scrolls horizontally in the timeline area
 
 ## How to Use
 
 Open `index.html` in any modern browser. No build tools or dependencies required.
 
-Use the toggle buttons at the top to switch between Real, Alternate, or Both timelines.
+Click timeline buttons at the top to toggle which timelines are visible. Use "All" to see them stacked.
+
+## Adding New Timelines
+
+Edit `data.js` and add a new object to the `TIMELINES` array. See the template comment at the bottom of the file. The UI picks it up automatically.
 
 ## Tech Stack
 

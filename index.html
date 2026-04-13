@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minecraft Timeline — What Really Happened & What If It Didn't</title>
+  <title>Minecraft Timeline — All Timelines</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
@@ -15,23 +15,23 @@
   <header class="hero">
     <div class="hero__inner">
       <h1 class="hero__title">Minecraft Timeline</h1>
-      <p class="hero__sub">The real history — and the world where it never happened.</p>
-      <div class="hero__toggle">
-        <button class="toggle-btn active" data-timeline="real">⛏️ Real Timeline</button>
-        <button class="toggle-btn" data-timeline="alt">🌀 Alternate Timeline</button>
-        <button class="toggle-btn" data-timeline="both">⚔️ Both</button>
-      </div>
+      <p class="hero__sub">The real history — and the worlds where things went differently.</p>
     </div>
   </header>
 
-  <main class="timelines" id="timelines">
-    <!-- Populated by JS -->
+  <div class="scroll-hint" id="scroll-hint">← Scroll horizontally →</div>
+
+  <main class="timeline-viewport" id="viewport">
+    <div class="timeline-track" id="track">
+      <!-- Populated by JS -->
+    </div>
   </main>
 
   <footer class="site-footer">
     <p>Made with 🟫 blocks and ❤️ — A Minecraft history project</p>
   </footer>
 
+  <script src="data.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
