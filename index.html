@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minecraft Timeline — What Really Happened & What If It Didn't</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <header class="hero">
+    <div class="hero__inner">
+      <h1 class="hero__title">Minecraft Timeline</h1>
+      <p class="hero__sub">The real history — and the world where it never happened.</p>
+      <div class="hero__toggle">
+        <button class="toggle-btn active" data-timeline="real">⛏️ Real Timeline</button>
+        <button class="toggle-btn" data-timeline="alt">🌀 Alternate Timeline</button>
+        <button class="toggle-btn" data-timeline="both">⚔️ Both</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="timelines" id="timelines">
+    <!-- Populated by JS -->
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with 🟫 blocks and ❤️ — A Minecraft history project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
